@@ -23,24 +23,24 @@ CREATE TABLE Orders (
 
 -- Create the PizzaTypes table
 CREATE TABLE PizzaTypes (
-    PizzaID INT PRIMARY KEY AUTO_INCREMENT,
+    PizzaID VARCHAR(10) PRIMARY KEY,
     PizzaName VARCHAR(100) NOT NULL,
     PizzaSize ENUM('Small', 'Medium', 'Large') NOT NULL,
-    Price DECIMAL(10, 2) NOT NULL
+    Price DECIMAL(5, 2)  NOT NULL
 );
 
 -- Create the Sides table
 CREATE TABLE Sides (
-    SideID INT PRIMARY KEY AUTO_INCREMENT,
+    SideID VARCHAR(10) PRIMARY KEY,
     SideName VARCHAR(100) NOT NULL,
-    Price DECIMAL(10, 2) NOT NULL
+    Price DECIMAL(5, 2)  NOT NULL
 );
 
 -- Create the ColdDrinks table
 CREATE TABLE ColdDrinks (
-    DrinkID INT PRIMARY KEY AUTO_INCREMENT,
+    DrinkID VARCHAR(10) PRIMARY KEY,
     DrinkName VARCHAR(100) NOT NULL,
-    Price DECIMAL(10, 2) NOT NULL
+    Price DECIMAL(5, 2) NOT NULL
 );
 
 -- Create the OrderDetails table
